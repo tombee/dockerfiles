@@ -1,4 +1,5 @@
 FROM debian:jessie
+LABEL maintainer "Tom Barlow <tom.barlow@docker.com>"
 
 RUN dpkg --add-architecture i386 && \
     apt-get update && \

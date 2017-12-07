@@ -20,7 +20,7 @@ RUN apk add --update openssl && \
 	wget https://github.com/sgerrand/alpine-pkg-glibc/releases/download/2.25-r0/glibc-2.25-r0.apk && \
 	apk add glibc-2.25-r0.apk
 
-MAINTAINER Tom Barlow <tom.barlow@docker.com>
+LABEL maintainer "Tom Barlow <tom.barlow@docker.com>"
 COPY --from=build /usr/local/bin/siege /usr/local/bin/siege
 COPY --from=build /usr/local/etc/siegerc /usr/local/etc/siegerc
 

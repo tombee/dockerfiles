@@ -1,5 +1,5 @@
 FROM alpine:3.6
-MAINTAINER Tom Barlow <tom.barlow@docker.com>
+LABEL maintainer "Tom Barlow <tom.barlow@docker.com>"
 
 RUN apk add --update \
 		iperf3 && \
